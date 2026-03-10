@@ -118,6 +118,30 @@ h1 {
   font-size: 0.9rem;
 }
 
+.slides-link-wrap {
+  margin: 1rem 0 0.4rem;
+}
+
+.slides-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  text-decoration: none;
+  font-weight: 800;
+  color: #08323b;
+  background: #fff7e7;
+  border: 1px solid #6c4f2d4a;
+  border-radius: 999px;
+  padding: 0.55rem 0.9rem;
+  box-shadow: 0 10px 20px #40200d1a;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.slides-link:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 14px 26px #40200d28;
+}
+
 .panel {
   background: var(--paper);
   backdrop-filter: blur(4px);

@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diapositivas - Fe y Ciencia</title>
+  <meta name="description" content="Diapositivas interactivas para sustentacion sobre la relacion entre fe y ciencia." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="presentacion.css" />
+</head>
+<body>
+  <div class="atmosphere" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="orb orb-a" aria-hidden="true"></div>
+  <div class="orb orb-b" aria-hidden="true"></div>
+  <div class="sparkles" id="sparkles" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <div class="top-actions">
+      <a href="index.html" class="back-link">Volver al contenido completo</a>
+      <button type="button" id="fullscreenBtn" class="back-link fullscreen-btn">Pantalla completa</button>
+    </div>
+    <div class="deck-meta">
+      <p class="deck-title">Sustentacion: Fe y Ciencia</p>
+      <p class="deck-current" id="slideTitle">Portada</p>
+      <p class="deck-progress" id="slideCounter">01 / 18</p>
+    </div>
+    <div class="top-progress" aria-hidden="true"><span id="progressFill"></span></div>
+  </header>
+
+  <main class="deck" id="deck" aria-live="polite">
+    <section class="slide active" data-title="Portada">
+      <p class="kicker">Cultura Religiosa</p>
+      <h1>Relacion entre Fe y Ciencia</h1>
+      <p class="lead">Un recorrido historico por conflictos, encuentros y aportes concretos entre tradiciones religiosas y desarrollo cientifico.</p>
+      <p class="hero-statement">La pregunta central es historica: cuando hubo tension, cuando hubo dialogo y que factores explican cada momento.</p>
+      <div class="hero-wave">
+        <span>Conflicto</span>
+        <span>Dialogo</span>
+        <span>Cooperacion</span>
+      </div>
+    </section>
+
+    <section class="slide" data-title="Definiciones">
+      <h2>Conceptos base</h2>
+      <div class="definition-grid">
+        <article>
+          <h3>Ciencia</h3>
+          <p>Conocimiento sistematico sustentado en observacion, contraste empirico y construccion de modelos explicativos.</p>
+        </article>
+        <article>
+          <h3>Fe</h3>
+          <p>Marco de sentido espiritual y existencial, articulado en creencias, simbolos, practicas y comunidades.</p>
+        </article>
+        <article>
+          <h3>Religion</h3>
+          <p>Expresion institucional y cultural de la fe, con normas, autoridades, textos y tradiciones historicas.</p>
+        </article>
+        <article>
+          <h3>Historiografia</h3>
+          <p>Analisis critico de como se interpreta el pasado a partir de fuentes, contexto y comparacion.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="slide" data-title="Tesis central">
+      <h2>Tesis central</h2>
+      <p class="lead">La historia no respalda ni una guerra permanente ni una armonia total entre fe y ciencia.</p>
+      <div class="split-grid highlight-grid">
+        <article>
+          <h3>Si hubo conflictos</h3>
+          <p>Especialmente cuando se disputo autoridad sobre la verdad publica.</p>
+        </article>
+        <article>
+          <h3>Tambien hubo cooperacion</h3>
+          <p>Universidades, traducciones, observatorios y cientificos creyentes aportaron al saber.</p>
+        </article>
+      </div>
+      <p class="note">La relacion es historica, cambiante y condicionada por contexto politico y cultural.</p>
+    </section>
+
+    <section class="slide" data-title="4 modelos">
+      <h2>4 modelos para explicar la relacion</h2>
+      <div class="model-grid">
+        <article><h3>Conflicto</h3><p>Choques documentados por autoridad doctrinal, interpretacion textual o poder institucional.</p></article>
+        <article><h3>Independencia</h3><p>Campos con preguntas distintas: mecanismos de la naturaleza vs sentido ultimo.</p></article>
+        <article><h3>Dialogo</h3><p>Intercambio en filosofia de la naturaleza, antropologia y etica de la investigacion.</p></article>
+        <article><h3>Integracion</h3><p>Intentos de sintesis entre cosmovision religiosa y hallazgos cientificos contemporaneos.</p></article>
+      </div>
+    </section>
+
+    <section class="slide" data-title="Linea temporal">
+      <h2>Linea temporal rapida</h2>
+      <div class="timeline">
+        <article><span>Siglos VIII-XIII</span><p>Florecimiento cientifico en el mundo islamico: medicina, algebra y optica.</p></article>
+        <article><span>Siglos XII-XV</span><p>Universidades europeas consolidan debate entre razon, filosofia natural y teologia.</p></article>
+        <article><span>Siglos XVI-XVII</span><p>Revolucion cientifica: metodo experimental y tensiones con autoridades tradicionales.</p></article>
+        <article><span>Siglos XIX-XXI</span><p>Profesionalizacion de la ciencia y nuevas conversaciones sobre etica y dignidad humana.</p></article>
+      </div>
+    </section>
+
+    <section class="slide" data-title="Edad Media">
+      <h2>Edad Media: preservacion y universidades</h2>
+      <div class="split-grid">
+        <article>
+          <h3>Monasterios y bibliotecas</h3>
+          <p>Conservacion y copia de textos clasicos que permitieron continuidad del saber.</p>
+        </article>
+        <article>
+          <h3>Escuelas catedralicias</h3>
+          <p>Espacios donde razon, logica y teologia se vincularon con el estudio de la naturaleza.</p>
+        </article>
+        <article>
+          <h3>Universidades medievales</h3>
+          <p>Institucionalizacion del debate intelectual en Paris, Bolonia y Oxford.</p>
+        </article>
+        <article>
+          <h3>Traducciones interculturales</h3>
+          <p>Circulacion de saber griego, arabe y latino con impacto en filosofia natural.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="slide" data-title="Revolucion cientifica">
+      <h2>Revolucion cientifica y cambio de paradigma</h2>
+      <div class="period-track">
+        <article>
+          <span>Metodo experimental</span>
+          <p>Observacion, matematizacion y verificacion empirica ganan centralidad.</p>
+        </article>
+        <article>
+          <span>Nuevas cosmologias</span>
+          <p>Del geocentrismo al heliocentrismo y expansion de la mecanica moderna.</p>
+        </article>
+        <article>
+          <span>Tensiones de autoridad</span>
+          <p>Disputas sobre quien interpreta la verdad publica del cosmos.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="slide" data-title="Casos">
+      <h2>Casos historicos clave</h2>
+      <div class="cards-3">
+        <article>
+          <h3>Galileo</h3>
+          <p>Conflicto multicausal: ciencia, poder y lectura biblica.</p>
+        </article>
+        <article>
+          <h3>Mendel</h3>
+          <p>Monje y fundador de la genetica moderna.</p>
+        </article>
+        <article>
+          <h3>Lemaitre</h3>
+          <p>Padre del atomo primitivo y rigor metodologico.</p>
+        </article>
+      </div>
+      <p class="note">Cada caso expresa dinamicas distintas: no existe un unico patron historico.</p>
+    </section>
+
+    <section class="slide" data-title="Casos extendidos">
+      <h2>Casos extendidos</h2>
+      <div class="split-grid">
+        <article>
+          <h3>Casa de la Sabiduria - Bagdad</h3>
+          <p>Traduccion, discusion y produccion de conocimiento en matematicas y medicina.</p>
+        </article>
+        <article>
+          <h3>Universidad medieval</h3>
+          <p>Institucionaliza el debate racional y da forma a comunidades de estudio.</p>
+        </article>
+        <article>
+          <h3>Observatorios y calendarios</h3>
+          <p>Interes practico y religioso impulso observacion astronomica sistematica.</p>
+        </article>
+        <article>
+          <h3>Bioetica contemporanea</h3>
+          <p>Hoy ciencia y fe dialogan en limites morales de nuevas tecnologias.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="slide" data-title="Aportes">
+      <h2>Aportes por tradiciones</h2>
+      <div class="timeline">
+        <article><span>Mundo islamico clasico</span><p>Optica, algebra, medicina, astronomia.</p></article>
+        <article><span>Mundo cristiano</span><p>Universidades, observatorios, redes academicas.</p></article>
+        <article><span>Tradicion judia</span><p>Contribuciones fuertes en fisica, quimica y medicina moderna.</p></article>
+        <article><span>Contextos no abrahamicos</span><p>India clasica y mundo helenistico aportan matematica, astronomia y filosofia natural.</p></article>
+      </div>
+    </section>
+
+    <section class="slide" data-title="Disciplinas">
+      <h2>Contribuciones por disciplinas</h2>
+      <div class="compare-grid">
+        <article><h3>Astronomia</h3><p>Calendarios, observacion celeste, modelos cosmologicos y observatorios.</p></article>
+        <article><h3>Medicina</h3><p>Hospitales, compilaciones clinicas, anatomia y circulacion del conocimiento terapeutico.</p></article>
+        <article><h3>Matematicas</h3><p>Algebra, aritmetica avanzada y formalizacion de herramientas de calculo.</p></article>
+        <article><h3>Biologia</h3><p>Genetica clasica con Mendel y nuevas lecturas de evolucion y origen humano.</p></article>
+        <article><h3>Fisica</h3><p>Debates sobre leyes naturales, causalidad y estructura del universo.</p></article>
+        <article><h3>Etica cientifica</h3><p>Discusion sobre limites de biotecnologia, IA y responsabilidad social.</p></article>
+      </div>
+    </section>
+
+    <section class="slide" data-title="Timeline extendido">
+      <h2>Timeline historico </h2>
+      <div class="h-timeline">
+        <article>
+          <span>VIII-X</span>
+          <h3>Bagdad y traducciones</h3>
+          <p>Convergencia de saberes griegos, persas e indios con fuerte impacto en matematicas y medicina.</p>
+        </article>
+        <article>
+          <span>XII-XIII</span>
+          <h3>Universidades europeas</h3>
+          <p>Consolidacion de comunidades academicas y debates entre filosofia natural y teologia.</p>
+        </article>
+        <article>
+          <span>XVI-XVII</span>
+          <h3>Revolucion cientifica</h3>
+          <p>Metodo experimental, matematizacion de la naturaleza y cambios de autoridad epistemica.</p>
+        </article>
+        <article>
+          <span>XIX</span>
+          <h3>Evolucion y debate</h3>
+          <p>Nuevas discusiones sobre origen de la vida, literalismo y lecturas simbolicas.</p>
+        </article>
+        <article>
+          <span>XX-XXI</span>
+          <h3>Bioetica e IA</h3>
+          <p>Dialogo entre ciencia, filosofia y religion sobre dignidad humana y responsabilidad tecnologica.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="slide" data-title="Mapa conceptual">
+      <h2>Mapa conceptual</h2>
+      <div class="concept-map">
+        <button class="concept-node active" type="button" data-target="concept-ciencia">Ciencia</button>
+        <button class="concept-node" type="button" data-target="concept-fe">Fe</button>
+        <button class="concept-node" type="button" data-target="concept-instituciones">Instituciones</button>
+        <button class="concept-node" type="button" data-target="concept-sociedad">Sociedad</button>
+        <button class="concept-node" type="button" data-target="concept-etica">Etica</button>
+      </div>
+      <div class="concept-panels">
+        <article class="concept-panel active" id="concept-ciencia">
+          <h3>Ciencia</h3>
+          <p>Construye modelos explicativos con observacion, experimentacion y validacion colectiva.</p>
+        </article>
+        <article class="concept-panel" id="concept-fe">
+          <h3>Fe</h3>
+          <p>Plantea preguntas de sentido, trascendencia y fundamento de valores.</p>
+        </article>
+        <article class="concept-panel" id="concept-instituciones">
+          <h3>Instituciones</h3>
+          <p>Universidades, academias y comunidades religiosas median la circulacion del conocimiento.</p>
+        </article>
+        <article class="concept-panel" id="concept-sociedad">
+          <h3>Sociedad</h3>
+          <p>Contexto politico y cultural define recepcion publica de teorias cientificas.</p>
+        </article>
+        <article class="concept-panel" id="concept-etica">
+          <h3>Etica</h3>
+          <p>Evalua fines, riesgos y justicia en el uso de avances cientificos.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="slide" data-title="Mitos">
+      <h2>Mitos y aclaraciones historicas</h2>
+      <div class="myth-grid">
+        <article><h3>"Siempre se opusieron"</h3><p>Simplificacion incorrecta: coexistieron conflicto, dialogo y cooperacion.</p></article>
+        <article><h3>"La fe anula objetividad"</h3><p>La validez cientifica depende del metodo y la evidencia, no de la creencia personal.</p></article>
+        <article><h3>"Galileo explica toda la historia"</h3><p>Es un caso clave, pero insuficiente para describir siglos y regiones diferentes.</p></article>
+      </div>
+    </section>
+
+    <section class="slide" data-title="Controversias actuales">
+      <h2>Controversias contemporaneas</h2>
+      <div class="qa-box">
+        <p><strong>Bioetica y genetica:</strong> debate sobre limites de intervencion en vida humana y dignidad personal.</p>
+        <p><strong>Inteligencia artificial:</strong> discusion sobre responsabilidad moral, sesgos y decisiones autonomas.</p>
+        <p><strong>Ecologia integral:</strong> convergencia entre datos climaticos, justicia social y cuidado de la casa comun.</p>
+      </div>
+    </section>
+
+    <section class="slide" data-title="Mapa comparado">
+      <h2>Mapa comparado de relaciones</h2>
+      <div class="compare-grid">
+        <article><h3>Factor politico</h3><p>Regimenes, censura y libertad academica afectan el ritmo de cambio cientifico.</p></article>
+        <article><h3>Factor institucional</h3><p>Escuelas, universidades y observatorios facilitan continuidad de investigacion.</p></article>
+        <article><h3>Factor cultural</h3><p>Interpretaciones simbolicas y mentalidades colectivas condicionan recepcion de teorias.</p></article>
+        <article><h3>Factor filosofico</h3><p>Conceptos de verdad, causalidad y naturaleza guian el debate entre marcos explicativos.</p></article>
+        <article><h3>Factor tecnologico</h3><p>Nuevos instrumentos amplian evidencia y reconfiguran discusiones tradicionales.</p></article>
+        <article><h3>Factor etico</h3><p>Toda innovacion cientifica abre preguntas sobre fines humanos y justicia social.</p></article>
+      </div>
+    </section>
+
+    <section class="slide" data-title="Sintesis">
+      <h2>Sintesis historica</h2>
+      <p class="lead">La relacion entre fe y ciencia no es lineal: cambia segun actores, epocas, instituciones y marcos culturales.</p>
+      <div class="quote-panel">
+        <p>En un mismo siglo puede haber colaboracion en universidades, debate filosofico en aulas y conflicto en esferas de poder.</p>
+      </div>
+      <div class="hero-wave">
+        <span>Contexto</span>
+        <span>Fuentes</span>
+        <span>Comparacion</span>
+      </div>
+    </section>
+
+    <section class="slide" data-title="Conclusiones">
+      <h2>Conclusiones clave</h2>
+      <ul class="key-list">
+        <li><strong>Primera:</strong> hubo conflictos reales, pero no permanentes.</li>
+        <li><strong>Segunda:</strong> instituciones religiosas tambien preservaron y promovieron ciencia.</li>
+        <li><strong>Tercera:</strong> cientificos creyentes y no creyentes compartieron metodo y comunidad academica.</li>
+        <li><strong>Cuarta:</strong> hoy el dialogo se desplaza hacia bioetica, IA y sostenibilidad.</li>
+      </ul>
+    </section>
+
+    <section class="slide" data-title="Bibliografia">
+      <h2>Referencias de apoyo</h2>
+      <div class="timeline">
+        <article><span>John Hedley Brooke</span><p>Analisis critico del mito de conflicto permanente.</p></article>
+        <article><span>Ian G. Barbour</span><p>Tipologia de conflicto, independencia, dialogo e integracion.</p></article>
+        <article><span>Peter Harrison</span><p>Historia conceptual de los terminos ciencia y religion.</p></article>
+        <article><span>Ronald L. Numbers</span><p>Estudios que cuestionan simplificaciones narrativas.</p></article>
+      </div>
+    </section>
+
+    <section class="slide" data-title="Gracias">
+      <h2>Gracias</h2>
+      <p class="lead">Relacion fe-ciencia: una historia compleja de ideas, instituciones y debates que siguen vigentes hoy.</p>
+      <div class="final-actions">
+        <a href="index.html">Volver al documento completo</a>
+        <button type="button" id="restartBtn">Reiniciar diapositivas</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="controls">
+    <button type="button" id="prevBtn" aria-label="Diapositiva anterior">Anterior</button>
+    <div class="dots" id="dots" aria-label="Navegacion por diapositivas"></div>
+    <button type="button" id="nextBtn" aria-label="Siguiente diapositiva">Siguiente</button>
+  </footer>
+
+  <script src="presentacion.js"></script>
+</body>
+</html>
